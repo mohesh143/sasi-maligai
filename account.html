@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/style.css">
+<title>Account - Sasi Maligai Admin</title>
+</head>
+<body>
+<div class="admin-shell">
+<aside class="admin-sidebar" id="adminNav" aria-label="Admin menu"></aside>
+<main class="admin-main">
+<div class="toolbar"><h1 class="mb-0 t-admin">Account</h1></div>
+<p>You are logged in as <strong id="who">...</strong>.</p>
+<div id="pwAlert"></div>
+<div class="form-card"><h2 class="t-sub">Change password</h2><form id="pwForm">
+  <div class="form-group"><label for="curPw">Current password</label><input type="password" id="curPw" autocomplete="current-password" required></div>
+  <div class="form-group"><label for="newPw">New password (8+ characters)</label><input type="password" id="newPw" autocomplete="new-password" minlength="8" required></div>
+  <div class="form-group"><label for="newPw2">New password again</label><input type="password" id="newPw2" autocomplete="new-password" required></div>
+  <button class="btn" type="submit">Change password</button></form></div>
+</main>
+</div>
+<script src="../js/admin-common.js"></script>
+<script src="../js/admin-account.js"></script>
+</body>
+</html>

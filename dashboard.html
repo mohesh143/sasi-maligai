@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/style.css">
+<title>Dashboard - Sasi Maligai Admin</title>
+</head>
+<body>
+<div class="admin-shell">
+<aside class="admin-sidebar" id="adminNav" aria-label="Admin menu"></aside>
+<main class="admin-main">
+<div class="toolbar"><h1 class="mb-0 t-admin">Dashboard</h1><span class="muted">Logged in as <strong id="adminUsername">...</strong></span></div>
+<div id="dashAlert"></div>
+<div id="todoBox" class="alert alert-info" hidden><strong>To do</strong><ul class="checklist" id="todoList"></ul></div>
+<div class="stat-grid">
+  <div class="stat-card"><div class="stat-number" id="statTotal">-</div><div class="stat-label">Products</div></div>
+  <div class="stat-card"><div class="stat-number" id="statAvailable">-</div><div class="stat-label">Available</div></div>
+  <div class="stat-card"><div class="stat-number" id="statUnavailable">-</div><div class="stat-label">Out of stock</div></div>
+  <div class="stat-card"><div class="stat-number" id="statCategories">-</div><div class="stat-label">Categories</div></div>
+  <div class="stat-card"><div class="stat-number" id="statFeedback">-</div><div class="stat-label">Feedback messages</div></div>
+  <div class="stat-card"><div class="stat-number" id="statRating">-</div><div class="stat-label">Average rating</div></div>
+</div>
+<div class="info-card"><h3>Quick links</h3><div class="btn-row">
+  <a class="btn btn-small" href="products.html">Products</a>
+  <a class="btn btn-outline btn-small" href="feedback.html">Feedback</a>
+  <a class="btn btn-outline btn-small" href="settings.html">Shop settings</a>
+  <a class="btn btn-outline btn-small" href="backup.html">Backup &amp; Restore</a>
+</div></div>
+</main>
+</div>
+<script src="../js/admin-common.js"></script>
+<script src="../js/admin-dashboard.js"></script>
+</body>
+</html>

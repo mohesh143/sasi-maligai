@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<title>Home - Sasi Maligai</title>
+<meta name="description" content="Sasi Maligai - neighbourhood grocery shop. See our products, opening hours and contact details.">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1 data-config="shopName">Sasi Maligai</h1>
+      <p class="tagline" data-config="tagline">Your neighbourhood grocery shop</p>
+      <p class="intro pre-line" data-config="intro">Rice, pulses, cooking oil, spices, snacks and everyday household items - all in one shop.</p>
+      <div class="btn-row">
+        <a class="btn" href="products.html">See our products</a>
+        <a class="btn btn-outline" data-href="phoneHref" href="#">Call us</a>
+        <a class="btn btn-whatsapp" data-href="whatsappUrl" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="categorySection">
+    <div class="container">
+      <h2>Shop by category</h2>
+      <div id="categoryGrid" class="cat-grid"></div>
+    </div>
+  </section>
+
+  <section id="featuredSection" class="band">
+    <div class="container">
+      <h2>Available today</h2>
+      <div id="featuredGrid" class="product-grid"></div>
+      <p class="mt-14"><a class="btn btn-outline" href="products.html">See all products</a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Visit us</h2>
+      <div class="info-grid">
+        <div class="info-card" data-need="address">
+          <h3>Address</h3>
+          <p class="pre-line" data-config="address"></p>
+          <a class="btn btn-outline btn-small" data-href="mapsUrl" href="#" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+        <div class="info-card" data-need="openingHours">
+          <h3>Opening hours</h3>
+          <p class="pre-line hours" data-config="openingHours"></p>
+        </div>
+        <div class="info-card" data-need="phone">
+          <h3>Phone</h3>
+          <p><a data-config="phone" data-href="phoneHref" href="#"></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/common.js"></script>
+<script src="js/products.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

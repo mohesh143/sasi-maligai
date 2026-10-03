@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/style.css">
+<title>Backup &amp; Restore - Sasi Maligai Admin</title>
+</head>
+<body>
+<div class="admin-shell">
+<aside class="admin-sidebar" id="adminNav" aria-label="Admin menu"></aside>
+<main class="admin-main">
+<div class="toolbar"><h1 class="mb-0 t-admin">Backup &amp; Restore</h1></div>
+<div id="backupAlert"></div>
+<div class="info-card mb-16"><h3>Create a backup</h3>
+  <p class="muted">Saves a complete copy of your shop data (products, categories, settings, feedback, admin login) in the <code>backups</code> folder. Copy that folder to a USB drive now and then.</p>
+  <button type="button" class="btn" id="createBtn">Create backup now</button></div>
+<div class="info-card"><h3>Your backups</h3>
+  <p class="muted small">A backup is made automatically once a day. Product pictures are kept in the <code>uploads</code> folder, so copy that folder to USB too.</p>
+  <div class="table-wrap"><table class="admin-table stack-table"><thead><tr><th>File</th><th>Type</th><th>Size</th><th>Made on</th><th>Actions</th></tr></thead><tbody id="backupRows"></tbody></table></div></div>
+<dialog id="restoreDialog" aria-labelledby="restoreTitle">
+  <h2 id="restoreTitle" class="mt-0 t-dialog">Restore a backup?</h2>
+  <div id="restoreAlert"></div>
+  <div id="restoreBody"></div>
+  <div class="btn-row"><button type="button" class="btn btn-danger" id="restoreYes" hidden>Yes, restore this backup</button><button type="button" class="btn btn-outline" id="restoreCancel">Cancel</button></div>
+</dialog>
+</main>
+</div>
+<script src="../js/admin-common.js"></script>
+<script src="../js/admin-backup.js"></script>
+</body>
+</html>

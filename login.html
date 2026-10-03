@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/style.css">
+<title>Admin login - Sasi Maligai</title>
+</head>
+<body>
+<div class="login-wrap">
+  <div class="form-card login-card">
+    <h1 class="t-login" id="formTitle">Admin login</h1>
+    <p class="muted">Sasi Maligai</p>
+    <p id="setupNote" class="alert alert-info" hidden>First time here. Choose a username and a strong password (at least 8 characters). Write it down and keep it safe.</p>
+    <div id="loginAlert"></div>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" autocomplete="username" required autofocus>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" autocomplete="current-password" required>
+      </div>
+      <div class="form-group" id="confirmRow" hidden>
+        <label for="password2">Type the password again</label>
+        <input type="password" id="password2" autocomplete="new-password">
+      </div>
+      <button type="submit" id="submitBtn" class="btn btn-block">Log in</button>
+    </form>
+    <p class="text-center small mt-14"><a href="../index.html">Back to the website</a></p>
+  </div>
+</div>
+<script src="../js/admin-login.js"></script>
+</body>
+</html>

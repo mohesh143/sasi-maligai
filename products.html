@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<title>Products - Sasi Maligai</title>
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+  <section>
+    <div class="container">
+      <h1 class="page-title t-page">Our products</h1>
+      <div class="filters">
+        <div>
+          <label class="small" for="searchInput">Search</label>
+          <input type="search" id="searchInput" placeholder="Type a product name" autocomplete="off">
+        </div>
+        <div>
+          <label class="small" for="categorySelect">Category</label>
+          <select id="categorySelect"><option value="All">All categories</option></select>
+        </div>
+        <div>
+          <label class="small" for="availabilitySelect">Availability</label>
+          <select id="availabilitySelect">
+            <option value="all">All items</option>
+            <option value="true">Available only</option>
+            <option value="false">Not available now</option>
+          </select>
+        </div>
+      </div>
+      <p id="resultCount" class="muted small result-count" aria-live="polite"></p>
+      <div id="productGrid" class="product-grid"></div>
+      <p id="emptyState" class="empty-state" hidden>No products found. Try a different search.</p>
+      <p class="text-center mt-16"><button id="moreBtn" class="btn btn-outline" type="button" hidden>Show more products</button></p>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/common.js"></script>
+<script src="js/products.js"></script>
+</body>
+</html>

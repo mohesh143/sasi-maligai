@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/style.css">
+<title>Categories - Sasi Maligai Admin</title>
+</head>
+<body>
+<div class="admin-shell">
+<aside class="admin-sidebar" id="adminNav" aria-label="Admin menu"></aside>
+<main class="admin-main">
+<div class="toolbar"><h1 class="mb-0 t-admin">Categories</h1></div>
+<div id="catAlert"></div>
+<div class="form-card mb-18"><form id="catForm"><div class="form-group"><label for="catName">New category name</label><input type="text" id="catName" maxlength="40" required></div><button class="btn" type="submit">Add category</button></form></div>
+<div class="table-wrap"><table class="admin-table stack-table"><thead><tr><th>Category</th><th>Products</th><th>Actions</th></tr></thead><tbody id="catRows"></tbody></table></div>
+<p class="muted small mt-10">A category can only be deleted when it has no products.</p>
+</main>
+</div>
+<script src="../js/admin-common.js"></script>
+<script src="../js/admin-categories.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../css/style.css">
+<title>Shop settings - Sasi Maligai Admin</title>
+</head>
+<body>
+<div class="admin-shell">
+<aside class="admin-sidebar" id="adminNav" aria-label="Admin menu"></aside>
+<main class="admin-main">
+<div class="toolbar"><h1 class="mb-0 t-admin">Shop settings</h1></div>
+<div id="setAlert"></div>
+<div class="form-card"><form id="settingsForm">
+  <div class="form-group"><label for="shop_name">Shop name</label><input type="text" id="shop_name" maxlength="60" required></div>
+  <div class="form-group"><label for="tagline">Tagline (one short line)</label><input type="text" id="tagline" maxlength="100"></div>
+  <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" maxlength="30" inputmode="tel"><p class="hint">Customers tap it to call. Example: 98765 43210</p></div>
+  <div class="form-group"><label for="whatsapp">WhatsApp number</label><input type="tel" id="whatsapp" maxlength="30" inputmode="tel"><p class="hint">Leave empty to hide the WhatsApp button. A 10-digit number gets +91 added automatically.</p></div>
+  <div class="form-group"><label for="email">Email</label><input type="email" id="email" maxlength="100"></div>
+  <div class="form-group"><label for="address">Shop address</label><textarea id="address" maxlength="300"></textarea></div>
+  <div class="form-group"><label for="opening_hours">Opening hours</label><textarea id="opening_hours" maxlength="300"></textarea><p class="hint">You can use several lines, for example one line per day.</p></div>
+  <div class="form-group"><label for="maps_url">Google Maps link</label><input type="text" id="maps_url" maxlength="800"><p class="hint">In Google Maps open your shop, press Share, then Copy link. To show a map on the Contact page choose Share &gt; Embed a map and paste the whole code here.</p></div>
+  <div class="form-group"><label for="intro">Home page introduction</label><textarea id="intro" maxlength="500"></textarea></div>
+  <div class="form-group"><label for="about">About page text</label><textarea class="tall" id="about" maxlength="1500"></textarea></div>
+  <div class="form-group"><label for="why_us">Why shop with us (optional)</label><textarea id="why_us" maxlength="800"></textarea></div>
+  <button class="btn" type="submit" id="saveSettings">Save settings</button>
+</form></div>
+</main>
+</div>
+<script src="../js/admin-common.js"></script>
+<script src="../js/admin-settings.js"></script>
+</body>
+</html>
